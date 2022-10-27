@@ -118,7 +118,10 @@ run().catch(console.dir)
 app.get('/',async(req,res)=>{
     res.send('cruding server')
 });
-
+// update 
+app.get('/hero',(req,res)=>{
+    res.send('hero meets hero ku')
+})
 app.listen(port,()=>{
     console.log('porting server',port)
 })
