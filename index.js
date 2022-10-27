@@ -64,7 +64,7 @@ try{
         // post 
         app.post('/service',async(req,res)=>{
             const newService=req.body;
-            console.log(newService);
+            // console.log(newService);
             const result=await services.insertOne(newService)
             res.send(result)
         });

@@ -21,4 +21,11 @@ update server with new changes
 1. make changes
 2. make sure you: git add . git commit git push
 3. git push heroku main/master
+--------------------------
+connect server with client and deploy client
+--------------------------
+1. replece localhost by heroku link
+2. npm run build
+3. firebase deploy
+
 */
