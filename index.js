@@ -66,7 +66,8 @@ try{
             const newService=req.body;
              console.log(newService);
             const result=await services.insertOne(newService)
-            res.send(result)
+            res.send(result);
+            // res.sen(result)
         });
     // delete a service
     app.delete('/service/:id',async(req,res)=>{
@@ -120,7 +121,7 @@ app.get('/',async(req,res)=>{
 });
 // update 
 app.get('/hero',(req,res)=>{
-    res.send('hero meets hero ku')
+    res.send('hero meets hero ku kak')
 })
 app.listen(port,()=>{
     console.log('porting server',port)
